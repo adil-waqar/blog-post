@@ -42,6 +42,7 @@ node app
 * [pug](https://pugjs.org/api/getting-started.html) - The template engine
 * [ESLint](https://eslint.org/) - The pluggable linting utility for JS
 * [git](https://git-scm.com/) - The version control system
+* [passportjs](http://www.passportjs.org/) - passportjs for auth
 
 ## License
 
