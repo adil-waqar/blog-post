@@ -16,7 +16,7 @@ npm install -g nodemon
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Following is a step by step series of examples that tell you how to get a development env up and running.
 
 First step would to install all the dependencies via npm. Just run npm install in the project directory.
 
