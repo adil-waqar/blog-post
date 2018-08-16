@@ -32,6 +32,8 @@ Otherwise run:
 ```
 node app
 ```
+
+This will run a local server on port 3000. Go to http://localhost:3000/ to launch the application.
 ## Built With
 
 * [Node.js](https://nodejs.org/en/docs/) - The servers enviroment
