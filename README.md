@@ -16,27 +16,24 @@ npm install -g nodemon
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Following is a step by step series of examples that tell you how to get a development env up and running.
 
 First step would to install all the dependencies via npm. Just run npm install in the project directory.
 
 ```
 npm install
 ```
-
 Next step would be to deploy it on your local server as follows.
-
-```
 If you've nodemon installed just run:
+```
 nodemon
-
+```
 Otherwise run:
+```
 node app
-
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
+This will run a local server on port 3000. Go to http://localhost:3000/ to launch the application.
 ## Built With
 
 * [Node.js](https://nodejs.org/en/docs/) - The servers enviroment
@@ -47,6 +44,7 @@ End with an example of getting some data out of the system or using it for a lit
 * [pug](https://pugjs.org/api/getting-started.html) - The template engine
 * [ESLint](https://eslint.org/) - The pluggable linting utility for JS
 * [git](https://git-scm.com/) - The version control system
+* [passportjs](http://www.passportjs.org/) - passportjs for auth
 
 ## License
 
