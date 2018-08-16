@@ -78,11 +78,20 @@ router.post('/edit/:id', (req, res) => {
   });
 });
 
-router.delete('/del/:id', (req, res) => {
+router.delete('/del/:id', isAuth, (req, res) => {
   let query = {_id: req.params.id};
-  Articles.remove(query, (err) => {
-    if (err) console.log(err);
-    res.send('SUCCESS');
+  // Auth for deletion
+  Articles.findById(query, (err, article) => {
+    if (err) return console.log(err);
+    if (article.author != req.user._id) {
+      req.flash('danger', 'Unauthorized access!');
+    } else {
+      Articles.remove(query, (err) => {
+        if (err) console.log(err);
+      });
+      req.flash('success', 'Deleted successfully!');
+    }
+    res.redirect('/');
   });
 });
 

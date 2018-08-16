@@ -6,6 +6,4 @@ del.addEventListener('click', () => {
   })
     .then(res => res.text())
     .then(data => console.log(data));
-
-  window.location.replace('/');
 });
