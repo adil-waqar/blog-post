@@ -1,0 +1,15 @@
+extends master
+
+block content
+  h1.display-4.text-center.mt-2 Edit form
+  form(action="/articles/edit/"+article._id, method="POST")
+    .form-group
+      label Title:
+      input.form-control(type="text", name="title", value=article.title)
+    .form-group
+      label Author:
+      input.form-control(type="text", name="author",value=article.author)
+    .form-group
+      label Text Area:
+      textarea.form-control(name="body") #{article.body}
+    input.btn.btn-outline-primary(type="submit", value="Submit")

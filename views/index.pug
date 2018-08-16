@@ -1,0 +1,8 @@
+extends master
+
+block content
+ h1.display-4.text-center.mt-2 #{title}
+ ul.list-group.mt-4
+  each article in articles
+    li.list-group-item
+      a(href='/articles/'+article._id)= article.title

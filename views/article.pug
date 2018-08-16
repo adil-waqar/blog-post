@@ -1,0 +1,12 @@
+extends master
+
+block content
+  .card.mt-5
+    .card-body
+      h5.card-title.display-4 #{article.title}
+      p.card-text.lead #{article.body}
+      p Written by: #{author.name}
+      if user
+        if user._id == article.author
+          a.btn.btn-outline-success.mr-2(href="/articles/edit/"+article._id) Edit
+          a.btn.btn-outline-danger.delete-article(href="#", id=article._id) Delete

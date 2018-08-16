@@ -1,0 +1,13 @@
+extends master
+
+block content
+ h1.display-4.text-center.mt-2 Login
+ form(action="/users/login", method="POST")
+  .form-group
+    label Username:
+    input.form-control(name="username", type="text")
+  .form-group
+    label Password:
+    input.form-control(name="password", type="password")
+  input.btn.btn-outline-primary.form-control(type="submit", value="Login")
+  

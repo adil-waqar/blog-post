@@ -1,0 +1,22 @@
+extends master
+
+block content
+ h1.display-4.text-center.mt-2 Register
+ form(action="/users/register", method="POST")
+  .form-group
+    label Name:
+    input.form-control(type="text", name="name")
+  .form-group
+    label Email:
+    input.form-control(type="text", name="email")
+  .form-group
+    label Username:
+    input.form-control(name="username", type="text")
+  .form-group
+    label Password:
+    input.form-control(name="password", type="password")
+  .form-group
+    label Confirm password:
+    input.form-control(name="password2", type="password")
+  input.btn.btn-outline-secondary.form-control(type="submit", value="Submit")
+  
