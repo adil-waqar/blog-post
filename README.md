@@ -23,20 +23,15 @@ First step would to install all the dependencies via npm. Just run npm install i
 ```
 npm install
 ```
-
 Next step would be to deploy it on your local server as follows.
-
-```
 If you've nodemon installed just run:
-nodemon
-
-Otherwise run:
-node app
-
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+nodemon
+```
+Otherwise run:
+```
+node app
+```
 ## Built With
 
 * [Node.js](https://nodejs.org/en/docs/) - The servers enviroment
